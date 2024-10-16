@@ -1,13 +1,23 @@
+* {
+    text-decoration: none;
+    color: inherit;
+}
+
 h1 {
+    color: black;
     text-align: center;
-    position: fixed;
-    
+    width: 100;
+    position: relative;
+    top: 40vh;
+    font-size: 5rem;
+
 }
 
 body {
     background-color: #fabe24;
     color: #faefc2;
-    width: 200vw;
+    width: fit-content;
+    min-width: 100vw;
 }
 
 .grow:hover {
