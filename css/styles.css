@@ -77,6 +77,9 @@ p {
   animation-name: slide;
   animation-fill-mode: backwards;
 }
+.delay-2 {
+    animation-delay: 2s;
+  }
 .delay-3 {
   animation-delay: 3s;
 }
@@ -113,8 +116,8 @@ p {
 .delay-16 {
   animation-delay: 16s;
 }
-.delay-17 {
-  animation-delay: 17s;
+.delay-18 {
+  animation-delay: 18s;
 }
 .delay-20 {
   animation-delay: 20s;
@@ -180,6 +183,27 @@ p {
   }
 }
 
+.bounce {
+    animation-name: bounce;
+    animation: 2s ease infinite;
+
+}
+@keyframes bounce{
+    0%{
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-50px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
 /* Chorus */
 .scroll {
   position: absolute;
@@ -238,24 +262,23 @@ footer {
   animation-fill-mode: both;
 }
 
-@keyframes swipe {
-  0% {
-    translate: 0 100vh;
-  }
-  25% {
-    translate: 0 0;
-    opacity: 1;
-  }
-  75% {
-    translate: 0 1;
-    opacity: 1;
+@-webkit-keyframes swipe {
+    0% {
+        -webkit-transform: translateY(150vh);
+    }
+    50% {
+        -webkit-transform: translateY(25vh);
+    }
+    75% {
+        -webkit-transform: translateY(25vh);
+        opacity: 1;
 
-  }
-  100% {
-    translate: 0 0;
-    opacity: 0;
-  }
-  }
+    }
+    100% {
+        -webkit-transform: translateY(-100%);
+        opacity: 0;
+    }
+}
 
 /* Chorus - Same Animations as the first chorus */ 
 
