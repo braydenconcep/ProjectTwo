@@ -78,8 +78,8 @@ p {
   animation-fill-mode: backwards;
 }
 .delay-2 {
-    animation-delay: 2s;
-  }
+  animation-delay: 2s;
+}
 .delay-3 {
   animation-delay: 3s;
 }
@@ -98,8 +98,14 @@ p {
 .delay-9 {
   animation-delay: 9s;
 }
+.delay-9-5 {
+  animation-delay: 9.5s;
+}
 .delay-10 {
   animation-delay: 10s;
+}
+.delay-11 {
+  animation-delay: 11s;
 }
 .delay-12 {
   animation-delay: 12s;
@@ -116,15 +122,21 @@ p {
 .delay-16 {
   animation-delay: 16s;
 }
+.delay-17 {
+  animation-delay: 17s;
+}
 .delay-18 {
   animation-delay: 18s;
 }
-.delay-20 {
-  animation-delay: 20s;
+.delay-21-5 {
+  animation-delay: 21.5s;
+}
+.delay-21 {
+  animation-delay: 21s;
 }
 .delay-22 {
-    animation-delay: 22s;
-  }
+  animation-delay: 22s;
+}
 .delay-25 {
   animation-delay: 25s;
 }
@@ -132,11 +144,14 @@ p {
   animation-delay: 27s;
 }
 .delay-30 {
-    animation-delay: 30s;
-  }
-  .delay-32 {
-    animation-delay: 32s;
-  }
+  animation-delay: 30s;
+}
+.delay-32 {
+  animation-delay: 32s;
+}
+.delay-37 {
+  animation-delay: 37s;
+}
 
 @keyframes slide {
   from {
@@ -164,7 +179,7 @@ p {
   }
   100% {
     font-size: 30px;
-    text-shadow: #ffffff 1px 0 10px;
+    text-shadow: #faefc2 1px 0 10px;
   }
 }
 
@@ -184,24 +199,48 @@ p {
 }
 
 .bounce {
-    animation-name: bounce;
-    animation: 2s ease infinite;
-
+  display: inline-block;
+  font-size: 25px;
+  animation-name: bounce;
+  animation-delay: 3s;
+  animation-duration: 2s;
 }
-@keyframes bounce{
-    0%{
-        transform: translateY(0);
-    }
-    30% {
-        transform: translateY(-50px);
-    }
-    50% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(0);
-    }
 
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY -30px;
+  }
+  60% {
+    tranform: translateY (-15px);
+  }
+}
+
+.rotate {
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(120deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Chorus */
@@ -212,6 +251,49 @@ p {
   animation-duration: 8s;
   animation-fill-mode: both;
 }
+.scroll1 {
+  position: absolute;
+  width: 100vw;
+  animation-name: scroll;
+  animation-duration: 8s;
+  animation-fill-mode: both;
+}
+@keyframes scroll1 {
+    0% {
+      translate: 150vw 0;
+    }
+    25% {
+      translate: 0 0;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+.scroll2 {
+  position: absolute;
+  width: 100vw;
+  animation-name: scroll;
+  animation-duration: 8s;
+  animation-fill-mode: both;
+}
+@keyframes scroll2 {
+    0% {
+      translate: 150vw 0;
+    }
+    25% {
+      translate: 0 0;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 
 .flash {
   animation-name: flash;
@@ -263,23 +345,55 @@ footer {
 }
 
 @-webkit-keyframes swipe {
-    0% {
-        -webkit-transform: translateY(150vh);
-    }
-    50% {
-        -webkit-transform: translateY(25vh);
-    }
-    75% {
-        -webkit-transform: translateY(25vh);
-        opacity: 1;
-
-    }
-    100% {
-        -webkit-transform: translateY(-100%);
-        opacity: 0;
-    }
+  0% {
+    -webkit-transform: translateY(150vh);
+  }
+  50% {
+    -webkit-transform: translateY(25vh);
+  }
+  75% {
+    -webkit-transform: translateY(25vh);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+    opacity: 0;
+  }
 }
 
-/* Chorus - Same Animations as the first chorus */ 
+/* Chorus - Same Animations as the first chorus */
 
 /* Outro */
+
+.outro {
+  animation-name: scroll, grow;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+}
+.emphasize {
+  animation-name: emphasize, slide;
+  animation-fill-mode: both;
+  animation-duration: 5s;
+  position: absolute;
+  width: 100vw;
+  top: 40vh;
+}
+@keyframes emphasize {
+  0% {
+    font-size: 25px;
+    opacity: 0;
+  }
+  25%,
+  50% {
+    font-size: 60px;
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    font-size: 30px;
+    text-shadow: #faefc2;
+    opacity: 0;
+  }
+}
