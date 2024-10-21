@@ -95,6 +95,9 @@ p {
 .delay-6 {
   animation-delay: 6s;
 }
+.delay-7 {
+    animation-delay: 7s;
+  }
 .delay-9 {
   animation-delay: 9s;
 }
@@ -223,6 +226,28 @@ p {
     tranform: translateY(-15px);
   }
 }
+.fall {
+    display: inline-block;
+    font-size: 25px;
+    animation-name: fall;
+    animation-duration: 3s;
+  }
+  
+  @keyframes fall {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(30px);
+    }
+    60% {
+      tranform: translateY(15px);
+    }
+  }
 
 .rotate {
   display: inline-block;
