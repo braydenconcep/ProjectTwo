@@ -185,7 +185,7 @@ p {
   }
   100% {
     font-size: 30px;
-    text-shadow: #faefc2 1px 0 10px;
+    text-shadow: gray 1px 0 10px;
   }
 }
 
@@ -272,49 +272,6 @@ p {
   animation-duration: 8s;
   animation-fill-mode: both;
 }
-.scroll1 {
-  position: absolute;
-  width: 100vw;
-  animation-name: scroll;
-  animation-duration: 8s;
-  animation-fill-mode: both;
-}
-@keyframes scroll1 {
-  0% {
-    translate: 150vw 0;
-  }
-  25% {
-    translate: 0 0;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.scroll2 {
-  position: absolute;
-  width: 100vw;
-  animation-name: scroll;
-  animation-duration: 8s;
-  animation-fill-mode: both;
-}
-@keyframes scroll2 {
-  0% {
-    translate: 150vw 0;
-  }
-  25% {
-    translate: 0 0;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
 .flash {
   animation-name: flash;
@@ -331,8 +288,8 @@ p {
     opacity: 0;
   }
   50% {
-    text-shadow: #ffffff 0 0 10px, #ffffff 0 0 20px, #ffffff 0 0 30px,
-      #ffffff 0 0 40px, #ffffff 0 0 50px;
+    text-shadow:gray 0 0 20px, gray 0 0 30px,
+     gray 0 0 40px;
     font-size: 80px;
     opacity: 1;
   }
@@ -414,7 +371,7 @@ footer {
   }
   100% {
     font-size: 30px;
-    text-shadow: #faefc2;
+    text-shadow: gray;
     opacity: 0;
   }
 }
