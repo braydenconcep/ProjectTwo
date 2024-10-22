@@ -96,11 +96,11 @@ p {
   animation-delay: 6s;
 }
 .delay-7 {
-    animation-delay: 7s;
-  }
-  .delay-8 {
-    animation-delay: 8s;
-  }
+  animation-delay: 7s;
+}
+.delay-8 {
+  animation-delay: 8s;
+}
 .delay-9 {
   animation-delay: 9s;
 }
@@ -109,6 +109,9 @@ p {
 }
 .delay-10 {
   animation-delay: 10s;
+}
+.delay-10-5 {
+  animation-delay: 10.5s;
 }
 .delay-11 {
   animation-delay: 11s;
@@ -134,6 +137,15 @@ p {
 .delay-18 {
   animation-delay: 18s;
 }
+.delay-18-5 {
+  animation-delay: 18.5s;
+}
+.delay-19 {
+  animation-delay: 19s;
+}
+.delay-19-5 {
+  animation-delay: 19.5s;
+}
 .delay-20 {
   animation-delay: 20s;
 }
@@ -147,22 +159,28 @@ p {
   animation-delay: 22s;
 }
 .delay-23 {
-    animation-delay: 23s;
-  }
+  animation-delay: 23s;
+}
 .delay-25 {
   animation-delay: 25s;
 }
 .delay-26 {
-    animation-delay: 26s;
-  }
+  animation-delay: 26s;
+}
 .delay-27 {
   animation-delay: 27s;
+}
+.delay-28 {
+  animation-delay: 28s;
 }
 .delay-30 {
   animation-delay: 30s;
 }
 .delay-32 {
   animation-delay: 32s;
+}
+.delay-33 {
+  animation-delay: 33s;
 }
 .delay-35 {
   animation-delay: 35s;
@@ -185,25 +203,25 @@ p {
 }
 
 .light {
-    display: inline-block;
-    animation-name: light;
-    animation-duration: 3s;
-    animation-fill-mode: both;
+  display: inline-block;
+  animation-name: light;
+  animation-duration: 3s;
+  animation-fill-mode: both;
 }
 
 @keyframes light {
-    25% {
-      font-size: 25px;
-    }
-  
-    50% {
-      font-size: 50px;
-    }
-    100% {
-      font-size: 30px;
-      text-shadow: #faefc2 1px 0 10px;
-    }
+  25% {
+    font-size: 25px;
   }
+
+  50% {
+    font-size: 50px;
+  }
+  100% {
+    font-size: 30px;
+    text-shadow: #faefc2 1px 0 10px;
+  }
+}
 
 @keyframes grow {
   25% {
@@ -257,27 +275,27 @@ p {
   }
 }
 .fall {
-    display: inline-block;
-    font-size: 30px;
-    animation-name: fall;
-    animation-duration: 4s;
+  display: inline-block;
+  font-size: 30px;
+  animation-name: fall;
+  animation-duration: 4s;
+}
+
+@keyframes fall {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
   }
-  
-  @keyframes fall {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(30px);
-    }
-    60% {
-      tranform: translateY(15px);
-    }
+  40% {
+    transform: translateY(30px);
   }
+  60% {
+    tranform: translateY(15px);
+  }
+}
 
 .rotate {
   display: inline-block;
@@ -299,7 +317,7 @@ p {
   position: absolute;
   width: 100vw;
   animation-name: scroll;
-  animation-duration: 8s;
+  animation-duration: 7s;
   animation-fill-mode: both;
 }
 
@@ -318,8 +336,7 @@ p {
     opacity: 0;
   }
   50% {
-    text-shadow:gray 0 0 20px, gray 0 0 30px,
-     gray 0 0 40px;
+    text-shadow: gray 0 0 20px, gray 0 0 30px, gray 0 0 40px;
     font-size: 80px;
     opacity: 1;
   }
@@ -369,28 +386,27 @@ footer {
   }
 }
 .stop {
-    position: absolute;
-    width: 100vw;
-    height: 40vh;
-    animation-name: stop;
-    animation-duration: 8s;
-    animation-fill-mode: both;
+  position: absolute;
+  width: 100vw;
+  height: 40vh;
+  animation-name: stop;
+  animation-duration: 8s;
+  animation-fill-mode: both;
 }
 @keyframes stop {
-    0% {
-      transform: translateY(150vh);
-      font-size: 25px;
-    }
-    50% {
-      transform: translateY(25vh);
-      font-size: 35px;
-    }
-    100% {
-        transform: translateY(25vh);
-        font-size: 35px;
-    }
+  0% {
+    transform: translateY(150vh);
+    font-size: 25px;
+  }
+  50% {
+    transform: translateY(25vh);
+    font-size: 35px;
+  }
+  100% {
+    transform: translateY(25vh);
+    font-size: 35px;
+  }
 }
-  
 
 /* Chorus - Same Animations as the first chorus */
 
