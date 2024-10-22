@@ -15,7 +15,7 @@ body {
   font-family: "Permanent Marker", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 a {
@@ -98,6 +98,9 @@ p {
 .delay-7 {
     animation-delay: 7s;
   }
+  .delay-8 {
+    animation-delay: 8s;
+  }
 .delay-9 {
   animation-delay: 9s;
 }
@@ -143,9 +146,15 @@ p {
 .delay-22 {
   animation-delay: 22s;
 }
+.delay-23 {
+    animation-delay: 23s;
+  }
 .delay-25 {
   animation-delay: 25s;
 }
+.delay-26 {
+    animation-delay: 26s;
+  }
 .delay-27 {
   animation-delay: 27s;
 }
@@ -155,8 +164,8 @@ p {
 .delay-32 {
   animation-delay: 32s;
 }
-.delay-37 {
-  animation-delay: 37s;
+.delay-35 {
+  animation-delay: 35s;
 }
 
 @keyframes slide {
@@ -174,6 +183,27 @@ p {
   animation-duration: 3s;
   animation-fill-mode: both;
 }
+
+.light {
+    display: inline-block;
+    animation-name: light;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+@keyframes light {
+    25% {
+      font-size: 25px;
+    }
+  
+    50% {
+      font-size: 50px;
+    }
+    100% {
+      font-size: 30px;
+      text-shadow: #faefc2 1px 0 10px;
+    }
+  }
 
 @keyframes grow {
   25% {
@@ -206,7 +236,7 @@ p {
 
 .bounce {
   display: inline-block;
-  font-size: 25px;
+  font-size: 30px;
   animation-name: bounce;
   animation-duration: 2s;
 }
@@ -228,7 +258,7 @@ p {
 }
 .fall {
     display: inline-block;
-    font-size: 25px;
+    font-size: 30px;
     animation-name: fall;
     animation-duration: 4s;
   }
@@ -318,7 +348,7 @@ footer {
   width: 100vw;
   height: 40vh;
   animation-name: swipe;
-  animation-duration: 8s;
+  animation-duration: 7s;
   animation-fill-mode: both;
 }
 
@@ -338,6 +368,29 @@ footer {
     opacity: 0;
   }
 }
+.stop {
+    position: absolute;
+    width: 100vw;
+    height: 40vh;
+    animation-name: stop;
+    animation-duration: 8s;
+    animation-fill-mode: both;
+}
+@keyframes stop {
+    0% {
+      transform: translateY(150vh);
+      font-size: 25px;
+    }
+    50% {
+      transform: translateY(25vh);
+      font-size: 35px;
+    }
+    100% {
+        transform: translateY(25vh);
+        font-size: 35px;
+    }
+}
+  
 
 /* Chorus - Same Animations as the first chorus */
 
